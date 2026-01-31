@@ -1,7 +1,0 @@
-<h2>Contact Us</h2>
-<p>
-Advanced Detection Systems<br>
-Address: ___________<br>
-Email: info@yourcompany.com<br>
-Phone: +91-XXXXXXXXXX
-</p>
