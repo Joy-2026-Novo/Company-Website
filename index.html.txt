@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Detection Systems</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Advanced Radiation & Detection Technologies</h1>
+  <p>Manufacturing EPR dosimetry, radon detectors, and scintillation detectors</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+  <h2>Our Products</h2>
+  <ul>
+    <li><a href="epr.html">EPR Dose Pellets</a></li>
+    <li><a href="ssntd.html">LR-115 Radon Detectors</a></li>
+    <li><a href="csi.html">CsI Scintillation Detectors</a></li>
+  </ul>
+</section>
+
+<footer>
+  © 2026 Advanced Detection Systems
+</footer>
+
+</body>
+</html>
