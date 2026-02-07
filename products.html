@@ -4,6 +4,7 @@
   <title>Products | NovoNuclear</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
   <style>
     body {
       font-family: "Segoe UI", Arial, sans-serif;
@@ -32,6 +33,45 @@
       text-align: center;
       padding: 15px;
       font-size: 14px;
+    }
+
+    /* 🔹 Toggle & Button Styles */
+    .toggle-box {
+      margin: 12px 0 30px 0;
+    }
+    .toggle-box input {
+      display: none;
+    }
+    .toggle-label {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #004aad;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .toggle-label:hover {
+      background: #003080;
+    }
+    .toggle-content {
+      display: none;
+      margin-top: 10px;
+    }
+    .toggle-box input:checked + .toggle-label + .toggle-content {
+      display: block;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #2e7d32;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .download-btn:hover {
+      background: #1b5e20;
     }
   </style>
 </head>
@@ -70,27 +110,81 @@
     CsI(Tl) and CsI(Na) detectors optimized for gamma spectroscopy and radiation
     monitoring applications.
   </p>
+
+  <hr>
+
+  <!-- 🔹 IRIS -->
   <h2>In-Situ Radiation Identification System (IRIS)</h2>
-<p>
-Portable radiation identification system for isotope identification,
-quantification, efficiency calibration, and dose rate calculation.
-</p>
+  <p>
+    Portable radiation identification system for isotope identification,
+    quantification, efficiency calibration, and dose rate calculation.
+  </p>
+  <div class="toggle-box">
+    <input type="checkbox" id="iris">
+    <label class="toggle-label" for="iris">Show Datasheet</label>
+    <div class="toggle-content">
+      <a class="download-btn"
+         href="datasheets/IRIS_In-Situ_Radiation_Identification_System.pdf"
+         target="_blank">
+         Download Datasheet
+      </a>
+    </div>
+  </div>
+
+  <!-- 🔹 NOVO-SCAN -->
   <h2>NOVO-SCAN – Personnel Contamination Monitor</h2>
-<p>
-Fully automated beta and gamma contamination monitoring system
-designed for personnel screening in controlled radiation areas.
-</p>
+  <p>
+    Fully automated beta and gamma contamination monitoring system
+    designed for personnel screening in controlled radiation areas.
+  </p>
+  <div class="toggle-box">
+    <input type="checkbox" id="novoscan">
+    <label class="toggle-label" for="novoscan">Show Datasheet</label>
+    <div class="toggle-content">
+      <a class="download-btn"
+         href="datasheets/NOVO-SCAN_Personnel_Contamination_Monitor.pdf"
+         target="_blank">
+         Download Datasheet
+      </a>
+    </div>
+  </div>
+
+  <!-- 🔹 OBERON -->
   <h2>OBERON – Digital Multichannel Analyzer</h2>
-<p>
-High-performance digital multichannel analyzer with integrated
-high-voltage supply, FPGA processing, and Ethernet communication.
-</p>
-  
-<h2>VIOLA – Digital Photomultiplier Base</h2>
-<p>
-Compact digital photomultiplier base with integrated high voltage,
-preamplifier, ADC, and FPGA-based signal processing.
-</p>
+  <p>
+    High-performance digital multichannel analyzer with integrated
+    high-voltage supply, FPGA processing, and Ethernet communication.
+  </p>
+  <div class="toggle-box">
+    <input type="checkbox" id="oberon">
+    <label class="toggle-label" for="oberon">Show Datasheet</label>
+    <div class="toggle-content">
+      <a class="download-btn"
+         href="datasheets/OBERON_Digital_Multichannel_Analyzer.pdf"
+         target="_blank">
+         Download Datasheet
+      </a>
+    </div>
+  </div>
+
+  <!-- 🔹 VIOLA -->
+  <h2>VIOLA – Digital Photomultiplier Base</h2>
+  <p>
+    Compact digital photomultiplier base with integrated high voltage,
+    preamplifier, ADC, and FPGA-based signal processing.
+  </p>
+  <div class="toggle-box">
+    <input type="checkbox" id="viola">
+    <label class="toggle-label" for="viola">Show Datasheet</label>
+    <div class="toggle-content">
+      <a class="download-btn"
+         href="datasheets/VIOLA_Digital_Photomultiplier_Base.pdf"
+         target="_blank">
+         Download Datasheet
+      </a>
+    </div>
+  </div>
+
 </section>
 
 <footer>
