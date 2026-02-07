@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://novonclear.com/sitemap.xml
