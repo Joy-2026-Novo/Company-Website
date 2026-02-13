@@ -1,164 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SPD-9300 Semiconductor Personal Dosimeter</title>
-
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f4f7fb;
-  color: #1e293b;
-}
-
-header {
-  background: #0f172a;
-  color: white;
-  padding: 18px 40px;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-.product {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.product img {
-  width: 100%;
-  max-width: 420px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 22px;
-  margin-top: 15px;
-  background: #2563eb;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-.tabs {
-  margin-top: 50px;
-  border-bottom: 2px solid #e2e8f0;
-  display: flex;
-  gap: 30px;
-}
-
-.tab {
-  padding: 12px 0;
-  cursor: pointer;
-  font-weight: bold;
-  color: #475569;
-}
-
-.tab.active {
-  color: #2563eb;
-  border-bottom: 3px solid #2563eb;
-}
-
-.tab-content {
-  display: none;
-  padding: 25px 0;
-}
-
-.tab-content.active {
-  display: block;
-}
-</style>
+  <link rel="icon" href="favicon.ico">
+ title>SPD-9300 Semiconductor Personal Dosimeter</title>                                                                                                                                                                                                                                                                                                                                                                                
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8fafc;
+      color: #1e293b;
+    }
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      background: #e2e8f0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #0f172a;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+    }
+    footer {
+      background: #e2e8f0;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <h1>SPD-9300 Semiconductor Personal Dosimeter</h1>
+  <h1>SPD-9300</h1>
+  <p>SPD-9300 Semiconductor Personal Dosimeter</p>
 </header>
 
-<div class="container">
+<nav>
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-  <div class="product">
-    <div>
-      <!-- FIXED PATH -->
-      <img src="../assets/img/spd-9300.png" alt="SPD-9300">
-    </div>
+<section>
+  <h2>Product Description</h2>
+  <p>
+    SPD-9300 is a semiconductor personal dosimeter designed for real-time
+    radiation monitoring and dose management. It measures gamma and X-ray
+    radiation exposure and supports ALARA radiation protection practices.
+  </p>
 
-    <div>
-      <h2>SPD-9300</h2>
-      <p>
-        Semiconductor personal dosimeter for real-time radiation monitoring
-        and dose management.
-      </p>
+  <h2>Applications</h2>
+  <ul>
+    <li>Nuclear power plants</li>
+    <li>Hospitals & medical radiation</li>
+    <li>Research laboratories and controlled zones</li>
+    <li>Industrial radiation safety</li>
+  </ul>
 
-      <!-- FIXED PATH -->
-      <a href="../assets/pdf/SPD-9300-catalog.pdf" class="btn" download>
-        Download Datasheet
-      </a>
-    </div>
-  </div>
+  <h2>Key Features</h2>
+  <ul>
+    <li>Instantly displays radiation dose and dose rate</li>
+    <li>High sensitivity to X-ray and Gamma radiation</li>
+    <li>Supports radiation protection principle (ALARA)</li>
+    <li>Compact & Lightweight Design</li>
+  </ul>
+</section>
+  <h2>Datasheet</h2>
+  <a href="SPD-9300-catlog.pdf" target="_blank"
+     style="
+       display: inline-block;
+       background-color: #2563eb;
+       color: white;
+       padding: 12px 20px;
+       text-decoration: none;
+       font-weight: bold;
+       border-radius: 6px;
+       margin-top: 10px;
+     ">
+    📄 Download Datasheet (PDF)
+  </a>
 
-  <div class="tabs">
-    <div class="tab active" onclick="openTab(event,'overview')">Overview</div>
-    <div class="tab" onclick="openTab(event,'applications')">Applications</div>
-    <div class="tab" onclick="openTab(event,'specs')">Specifications</div>
-    <div class="tab" onclick="openTab(event,'download')">Download</div>
-  </div>
 
-  <div id="overview" class="tab-content active">
-    <p>
-      SPD-9300 provides instant radiation dose display and systematic
-      exposure management. Suitable for nuclear facilities, hospitals,
-      NDT and industrial radiation safety.
-    </p>
-  </div>
-
-  <div id="applications" class="tab-content">
-    <ul>
-      <li>Nuclear facilities</li>
-      <li>NDT inspection</li>
-      <li>Hospitals</li>
-      <li>Industrial radiation safety</li>
-    </ul>
-  </div>
-
-  <div id="specs" class="tab-content">
-    <ul>
-      <li>Energy: 30 keV – 6 MeV</li>
-      <li>Detector: Semiconductor</li>
-      <li>Battery: CR2450</li>
-      <li>Weight: 55 g</li>
-      <li>Size: 80 × 48 × 20 mm</li>
-    </ul>
-  </div>
-
-  <div id="download" class="tab-content">
-    <a href="../assets/pdf/SPD-9300-catalog.pdf" class="btn" download>
-      Download SPD-9300 Datasheet
-    </a>
-  </div>
-
-</div>
-
-<script>
-function openTab(evt, name){
-  var i, t, c;
-  t = document.getElementsByClassName("tab-content");
-  for(i=0;i<t.length;i++){t[i].classList.remove("active");}
-  c = document.getElementsByClassName("tab");
-  for(i=0;i<c.length;i++){c[i].classList.remove("active");}
-  document.getElementById(name).classList.add("active");
-  evt.currentTarget.classList.add("active");
-}
-</script>
+<footer>
+  © 2026 Novonuclear Private Limited
+</footer>
 
 </body>
 </html>
