@@ -30,7 +30,13 @@
       padding: 40px;
       text-align: center;
     }
-    nav {
+     .hero-banner img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+     nav {
       background: #e2e8f0;
       padding: 10px;
       text-align: center;
@@ -46,6 +52,34 @@
       margin: auto;
       padding: 40px;
     }
+     .welcome-section{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+.welcome-image img{
+    width:250px;
+    border-radius:10px;
+}
+     .services{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+}
+
+.service-card{
+    width:300px;
+    text-align:center;
+}
+
+.service-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+}
     footer {
       background: #e2e8f0;
       text-align: center;
@@ -62,6 +96,9 @@
   <h1 style="margin:0;">Novonuclear</h1>
   <p style="margin-top:8px;">Manufacturing precision radiation measurement instruments</p>
 </header>
+<section class="hero-banner">
+    <img src="hero-banner.png" alt="Novonuclear Hero Banner">
+</section>
 
 
 <nav>
@@ -72,15 +109,40 @@
 </nav>
 
 <section style="margin-bottom:40px;">
-  <h2>Welcome</h2>
-  <p>
-    We are an R&D-focused manufacturer engaged in the development of radiation
-    monitoring systems, radon detectors, and scintillation-based detectors for
-    research, medical, and environmental applications.
-  </p>
+ <div class="welcome-section">
+    <div class="welcome-text">
+        <h2>Welcome</h2>
+        <p>
+            We are an R&D-focused manufacturer engaged in the development
+            of radiation monitoring systems, radon detectors, and
+            scintillation-based detectors for research, medical,
+            and environmental applications.
+        </p>
+
+    </div>
+    <div class="welcome-image">
+        <img src="dosimeter.png" alt="Dosimeter">
+    </div>
+</div>
 <section style="margin-bottom:40px;">
 <section style="margin-bottom:40px;">
-  <h2>What We Do</h2>
+ <div class="services">
+    <div class="service-card">
+        <img src="detector.png" alt="Detector">
+        <h3>Radiation Detection</h3>
+    </div>
+
+    <div class="service-card">
+        <img src="radiation-monitor.png" alt="Radiation Monitor">
+        <h3>Radiation Monitoring</h3>
+    </div>
+
+    <div class="service-card">
+        <img src="research-lab.png" alt="Research Laboratory">
+        <h3>Research & Development</h3>
+    </div>
+
+</div>
   <p>
     Novonuclear is engaged in the research, development, and manufacturing of
     radiation measurement and detection instruments. Our focus is on providing
