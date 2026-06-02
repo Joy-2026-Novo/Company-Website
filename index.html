@@ -24,21 +24,21 @@
       background: #f8fafc;
       color: #1e293b;
     }
-  <header style="background:#0f172a; 
-     color:white; padding:15px; 
-     text-align:center;">
-    }
-         nav {
-      background: #e2e8f0;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #0f172a;
-    }
+ 
+     nav{
+    background:#e2e8f0;
+    padding:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+}
+
+nav a{
+    text-decoration:none;
+    font-weight:bold;
+    color:#0f172a;
+}
       .hero-banner {
     max-width: 100% !important;
     padding: 0 !important;
@@ -101,6 +101,12 @@
 <section class="hero-banner">
     <img src="images/hero-banner.png" alt="Novonuclear Hero Banner">
 </section>   
+   .hero-banner img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    display:block;
+}
 <section style="margin-bottom:40px;">
  <div class="welcome-section">
     <div class="welcome-text">
@@ -118,20 +124,27 @@
     </div>
 </div>
 <section style="margin-bottom:40px;">
-<section style="margin-bottom:40px;">
  <div class="services">
     <div class="service-card">
         <img src="detector.jpeg" alt="Detector">
         <h3>Radiation Detection</h3>
     </div>
-<h2>What We Do</h2>
-  <div class="services">
+<h2 style="text-align:center;">What We Do</h2>
+
+<div class="services">
+
+    <div class="service-card">
+        <img src="images/detector.jpeg" alt="Detector">
+        <h3>Radiation Detection</h3>
+    </div>
+
+    <div class="service-card">
         <img src="images/radiation-monitor.jpeg" alt="Radiation Monitor">
         <h3>Radiation Monitoring</h3>
     </div>
 
     <div class="service-card">
-       <img src="images/research-lab.jpeg" alt="Research Laboratory">
+        <img src="images/research-lab.jpeg" alt="Research Laboratory">
         <h3>Research & Development</h3>
     </div>
 
@@ -142,7 +155,6 @@
     reliable, reproducible, and scientifically validated solutions for
     radon monitoring, and radiation detection.
   </p>
-<section style="margin-bottom:40px;">
 <section style="
   margin-bottom:40px;
   background:#f1f5f9;
@@ -173,7 +185,6 @@
 </a>
   </p>
 <section style="margin-bottom:40px;">
-<section style="margin-bottom:40px;">
   <h2>Applications</h2>
   <ul>
     <li>Radiation processing industries</li>
@@ -181,7 +192,6 @@
     <li>Environmental radiation surveys</li>
     <li>Research laboratories and academic institutions</li>
   </ul>
-<section style="margin-bottom:40px;">
 <section style="margin-bottom:40px;">
   <h2>Why Novonuclear</h2>
   <ul>
