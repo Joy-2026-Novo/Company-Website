@@ -1,72 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <title>Novonuclear | Radiation Dosimetry & Detection Instruments</title>
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0THW904RY4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  gtag('config', 'G-0THW904RY4');
-</script>
+<title>Novonuclear | Radiation Dosimetry & Detection Instruments</title>
 
-  <meta name="description" content="Novonuclear is an R&D-focused manufacturer of radiation monitoring systems, radon detectors, and scintillation-based radiation measurement instruments for research, medical, and environmental applications.">
+<meta name="description" content="Novonuclear is an R&D-focused manufacturer of radiation monitoring systems, radon detectors, and scintillation-based radiation measurement instruments for research, medical, and environmental applications.">
 
-  <meta name="keywords" content="radiation dosimetry, radon detectors, LR-115 SSNTD, CsI scintillation detector, radiation measurement instruments">
+<meta name="keywords" content="radiation dosimetry, radon detectors, radiation monitoring, scintillation detector, radiation instruments">
 
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f8fafc;
-      color: #1e293b;
-    }
- 
-     nav{
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f8fafc;
+    color:#1e293b;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+header img{
+    width:100px;
+    margin-bottom:10px;
+}
+
+header h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+/* Navigation */
+
+nav{
     background:#e2e8f0;
-    padding:15px;
     display:flex;
     justify-content:center;
-    align-items:center;
     gap:40px;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 nav a{
     text-decoration:none;
-    font-weight:bold;
     color:#0f172a;
+    font-weight:bold;
 }
-      .hero-banner {
-    max-width: 100% !important;
-    padding: 0 !important;
-}    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px;
-    }
-   .welcome-section{
+
+/* Hero Banner */
+
+.hero-banner{
+    width:100%;
+}
+
+.hero-banner img{
+    width:100%;
+    height:550px;
+    object-fit:cover;
+    display:block;
+}
+
+/* General Container */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+/* Welcome Section */
+
+.welcome-section{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:40px;
+    gap:50px;
     flex-wrap:wrap;
 }
-   .welcome-image img{
-    width:250px;
+
+.welcome-text{
+    flex:1;
+}
+
+.welcome-text h2{
+    margin-bottom:15px;
+}
+
+.welcome-image{
+    flex:1;
+    text-align:center;
+}
+
+.welcome-image img{
+    width:280px;
     border-radius:10px;
 }
-     .services{
+
+/* Services */
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.services{
     display:flex;
     justify-content:center;
     gap:30px;
-    margin-top:30px;
+    flex-wrap:wrap;
 }
 
 .service-card{
-    width:300px;
+    width:320px;
     text-align:center;
 }
 
@@ -76,134 +139,208 @@ nav a{
     object-fit:cover;
     border-radius:10px;
 }
-    footer {
-      background: #e2e8f0;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
+
+.service-card h3{
+    margin-top:15px;
+}
+
+/* Products Box */
+
+.product-box{
+    background:#f1f5f9;
+    padding:30px;
+    border-radius:10px;
+    margin-top:50px;
+}
+
+.product-box h2{
+    margin-bottom:20px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 18px;
+    background:#0f172a;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+/* Lists */
+
+.info-section{
+    margin-top:50px;
+}
+
+.info-section h2{
+    margin-bottom:15px;
+}
+
+.info-section ul{
+    padding-left:20px;
+}
+
+/* Footer */
+
+footer{
+    background:#e2e8f0;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:36px;
     }
-  </style>
+
+    nav{
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .hero-banner img{
+        height:300px;
+    }
+
+    .welcome-section{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .service-card{
+        width:100%;
+    }
+}
+
+</style>
 </head>
 
 <body>
 
-<header style="background:#0f172a; color:white; padding:30px; text-align:center;">
- <img src="logo.png" alt="Novonuclear Logo" style="width:100px; margin-bottom:10px;">
-  <h1 style="margin:0;">Novonuclear</h1>
-  <p style="margin-top:8px;">Manufacturing precision radiation measurement instruments</p>
+<header>
+    <img src="logo.png" alt="Novonuclear Logo">
+    <h1>Novonuclear</h1>
+    <p>Manufacturing Precision Radiation Measurement Instruments</p>
 </header>
+
 <nav>
-  <a href="index.html">Home</a>
-  <a href="products.html">Products</a>
-  <a href="about.html">About Us</a>
-  <a href="contact.html">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
 </nav>
+
 <section class="hero-banner">
     <img src="images/hero-banner.png" alt="Novonuclear Hero Banner">
-</section>   
-   .hero-banner img{
-    width:100%;
-    height:500px;
-    object-fit:cover;
-    display:block;
-}
-<section style="margin-bottom:40px;">
- <div class="welcome-section">
-    <div class="welcome-text">
-        <h2>Welcome</h2>
-        <p>
-            We are an R&D-focused manufacturer engaged in the development
-            of radiation monitoring systems, radon detectors, and
-            scintillation-based detectors for research, medical,
-            and environmental applications.
+</section>
+
+<div class="container">
+
+    <section class="welcome-section">
+
+        <div class="welcome-text">
+            <h2>Welcome</h2>
+
+            <p>
+                We are an R&D-focused manufacturer engaged in the development
+                of radiation monitoring systems, radon detectors, and
+                scintillation-based detectors for research, medical,
+                and environmental applications.
+            </p>
+        </div>
+
+        <div class="welcome-image">
+            <img src="images/dosimeter.jpeg" alt="Dosimeter">
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2 class="section-title">What We Do</h2>
+
+        <div class="services">
+
+            <div class="service-card">
+                <img src="images/detector.jpeg" alt="Radiation Detector">
+                <h3>Radiation Detection</h3>
+            </div>
+
+            <div class="service-card">
+                <img src="images/radiation-monitor.jpeg" alt="Radiation Monitoring">
+                <h3>Radiation Monitoring</h3>
+            </div>
+
+            <div class="service-card">
+                <img src="images/research-lab.jpeg" alt="Research Laboratory">
+                <h3>Research & Development</h3>
+            </div>
+
+        </div>
+
+        <p style="margin-top:30px;">
+            Novonuclear is engaged in the research, development,
+            and manufacturing of radiation measurement and detection
+            instruments. Our focus is on providing reliable,
+            reproducible, and scientifically validated solutions
+            for radon monitoring and radiation detection.
         </p>
 
-    </div>
-    <div class="welcome-image">
-        <img src="images/dosimeter.jpeg" alt="Dosimeter">
-    </div>
+    </section>
+
+    <section class="product-box">
+
+        <h2>Our Products</h2>
+
+        <ul>
+            <li>
+                <strong>In-Situ Radiation Identification System (IRIS)</strong>
+                <p>Portable Radiation Identification and Spectroscopy System</p>
+            </li>
+        </ul>
+
+        <a href="products.html" class="button">
+            View All Products →
+        </a>
+
+    </section>
+
+    <section class="info-section">
+
+        <h2>Applications</h2>
+
+        <ul>
+            <li>Radiation processing industries</li>
+            <li>Indoor radon monitoring programs</li>
+            <li>Environmental radiation surveys</li>
+            <li>Research laboratories and academic institutions</li>
+        </ul>
+
+    </section>
+
+    <section class="info-section">
+
+        <h2>Why Novonuclear</h2>
+
+        <ul>
+            <li>Research-driven product development</li>
+            <li>Controlled manufacturing processes</li>
+            <li>Focus on accuracy, stability, and reproducibility</li>
+            <li>Solutions designed for scientific and institutional use</li>
+        </ul>
+
+    </section>
+
 </div>
-<section style="margin-bottom:40px;">
- <div class="services">
-    <div class="service-card">
-        <img src="detector.jpeg" alt="Detector">
-        <h3>Radiation Detection</h3>
-    </div>
-<h2 style="text-align:center;">What We Do</h2>
-
-<div class="services">
-
-    <div class="service-card">
-        <img src="images/detector.jpeg" alt="Detector">
-        <h3>Radiation Detection</h3>
-    </div>
-
-    <div class="service-card">
-        <img src="images/radiation-monitor.jpeg" alt="Radiation Monitor">
-        <h3>Radiation Monitoring</h3>
-    </div>
-
-    <div class="service-card">
-        <img src="images/research-lab.jpeg" alt="Research Laboratory">
-        <h3>Research & Development</h3>
-    </div>
-
-</div>
-  <p>
-    Novonuclear is engaged in the research, development, and manufacturing of
-    radiation measurement and detection instruments. Our focus is on providing
-    reliable, reproducible, and scientifically validated solutions for
-    radon monitoring, and radiation detection.
-  </p>
-<section style="
-  margin-bottom:40px;
-  background:#f1f5f9;
-  padding:25px;
-  border-radius:8px;">
-  <h2>Our Products</h2>
-
-  <ul>
-    <li>
-      <strong>In-Situ Radiation Identification System (IRIS)</strong> 
-       <p>Portable Radiation Identification and Spectroscopy System</p>
-    </li>
-     </ul>
-
-  <p>
-   <a href="products.html"
-   style="
-     display:inline-block;
-     margin-top:10px;
-     padding:10px 16px;
-     background:#0f172a;
-     color:white;
-     text-decoration:none;
-     border-radius:6px;
-     font-weight:bold;
-   ">
-   View all products →
-</a>
-  </p>
-<section style="margin-bottom:40px;">
-  <h2>Applications</h2>
-  <ul>
-    <li>Radiation processing industries</li>
-    <li>Indoor radon monitoring programs</li>
-    <li>Environmental radiation surveys</li>
-    <li>Research laboratories and academic institutions</li>
-  </ul>
-<section style="margin-bottom:40px;">
-  <h2>Why Novonuclear</h2>
-  <ul>
-    <li>Research-driven product development</li>
-    <li>Controlled manufacturing processes</li>
-    <li>Focus on accuracy, stability, and reproducibility</li>
-    <li>Solutions designed for scientific and institutional use</li>
-  </ul>
-<section style="margin-bottom:40px;">
 
 <footer>
-  © 2026 Novonuclear Private Limited
+    © 2026 Novonuclear Private Limited
 </footer>
 
 </body>
