@@ -172,6 +172,11 @@ nav a{
 
 .info-section{
     margin-top:50px;
+    display:flex;
+    justify-content:center;
+    gap:100px;
+    flex-wrap:wrap;
+    align-items:flex-start;
 }
 
 .info-section h2{
@@ -181,17 +186,13 @@ nav a{
 .info-section ul{
     padding-left:20px;
 }
-.info-container{
-    display:flex;
-    justify-content:center;
-    gap:100px;
-    margin-top:50px;
-    flex-wrap:wrap;
-}
+
 .info-column{
-    width:450px;
+    flex:1;
+    min-width:300px;
+    max-width:500px;
 }
-/* Footer */
+    /* Footer */
 
 footer{
     background:#e2e8f0;
@@ -320,20 +321,20 @@ footer{
 
     </section>
 
-    <section class="info-section">
+  <section class="info-section">
 
+    <div class="info-column">
         <h2>Applications</h2>
-
-       <ul>
+        <ul>
             <li>Radiation processing industries</li>
             <li>Indoor radon monitoring programs</li>
             <li>Environmental radiation surveys</li>
             <li>Research laboratories and academic institutions</li>
         </ul>
     </div>
+
     <div class="info-column">
         <h2>Why Novonuclear</h2>
-
         <ul>
             <li>Research-driven product development</li>
             <li>Controlled manufacturing processes</li>
@@ -342,7 +343,8 @@ footer{
         </ul>
     </div>
 
-</div>
+</section>
+    </div>
 <footer>
     © 2026 Novonuclear Private Limited
 </footer>
